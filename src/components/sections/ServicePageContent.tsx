@@ -66,7 +66,7 @@ export default function ServicePageContent({ data }: { data: ServicePageData }) 
               <h2 className="text-[28px] font-extrabold text-gray-900 md:text-4xl">{data.label} Designs For Bangalore Homes</h2>
             </div>
           </AnimatedSection>
-          <ImageGallery images={data.gallery} />
+          <ImageGallery images={data.gallery} showCategories />
           <div className="mt-10 text-center">
             <button onClick={openModal} className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-purple-500/20 transition-all hover:-translate-y-0.5 hover:shadow-purple-500/30">
               Get a Quote for {data.label}
