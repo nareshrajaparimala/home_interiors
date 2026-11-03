@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Hero from "@/components/sections/Hero";
-import SubBanner from "@/components/sections/SubBanner";
+import OfferTicker from "@/components/layout/OfferTicker";
 import EstimateSection from "@/components/sections/EstimateSection";
 import StepsSection from "@/components/sections/StepsSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
@@ -33,8 +33,8 @@ export default function HomePage() {
 
   return (
     <main>
+      <OfferTicker />
       <Hero onOpenModal={openModal} />
-      <SubBanner />
 
       {/* Service Cards — Link to individual pages */}
       <section id="services" className="bg-white py-16 md:py-20">
